@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Oswald:400,700&display=swap');
+body 
+{
+  margin: 0;
+  background: linear-gradient(to bottom, #060115 37%, #ff1b31 132%);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  /*
+  060115 purple
+  d40db1 pink
+  ff1b31 red
+  d43a0d orange
+  fff220 yellow
+  */
+}
+.banner
+{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.column
+{
+  width: 60%;
+  margin: 0 auto;
+  padding: 0% 5%;
+  
+  color:#d43a0d;
+  /*
+  text-shadow: 1px 1px #fff220;
+  */
+  font-family: 'Roboto', sans-serif;
+}
+.post
+{
+  background: linear-gradient(to bottom, #060115 20%, rgba(0, 0, 0, 0) 90%);
+  padding:2% 1% 10% 1%;
+}
+.title
+{
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 0px;
+}
+.date
+{
+  text-align: right;
+  opacity: .4;
+  padding-bottom: 1%;
+}
+.header 
+{
+    font-family: 'Major Mono Display', monospace;
+    margin-top: 0;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+p
+{
+    font-size: 18px;
+}
+h1
+{
+    font-size: 30px;
+}
+.contbox{
+  
+    text-align: center;
+    font-weight:700;
+    width: 70%;
+    display:inline-block;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    padding: 0;
+    height: 15em;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.content
+{
+    border-radius: 0px 0px 8px 8px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.on-red-font
+{
+    color: #cc33ff;
+    text-shadow: 1px 1px #5907ab;
+}
+.on-purple-font
+{
+    color: #ff471a;
+    text-shadow: 1px 1px #990000;
+}
+.nebulous-font
+{
+    color: #e60000;
+    text-shadow: 3px 1px #0039e6;
+}
+.custom
+{
+    background-color: #150349;
+}
+.custom2
+{
+    background-color: #800020;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (min-width:600px) 
+{
+    p
+    {
+        font-size: 20px;
+    }
+    h1
+    {
+        font-size: 32px;
+    }  
+    .contbox
+    {
+        text-align: center;
+        width: 60%;
+        display:inline-block;
+        margin-left: 20%;
+        margin-bottom: 5%;
+        padding: 0;
+        height: 17em;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .content
+    {
+        border-radius: 0px 0px 10px 10px;
+        object-fit: cover;
+        height: 100%;
+    }
+}
+@media screen and (min-width:768px) 
+{
+    p
+    {
+        font-size: 20px;
+    }
+    h1
+    {
+        font-size: 34px;
+    }
+    .contbox
+    {
+        text-align: center;   
+        margin: 0 0 5% 0;
+        padding: 0;
+        height: 17em;
+        overflow: hidden;
+        border-radius: 12px;
+    }
+    .content
+    {
+        border-radius: 0px 0px 12px 12px;
+        object-fit: cover;
+    }
+    .left
+    { 
+        float: left;
+        margin-left: 7%;   
+    }
+    .right
+    {  
+        float: right;
+        margin-right: 7%;
+    }
+    .first
+    {
+        width: 55%;
+    }
+    .second
+    {
+        width: 25%;
+    }
+    .third
+    {
+        width: 25%;
+    }
+    .wide-content
+    {
+        width: 100%;
+    }
+    .tall-content
+    {
+        height: 100%;
+    }  
+}
+@media only screen and (min-width: 992px) 
+{
+    p
+    {
+        font-size: 22px;
+    }
+    h1
+    {
+        font-size: 36px;
+    }
+    .contbox
+    {
+        text-align: center;   
+        margin: 0 0 5% 0;
+        padding: 0;
+        height: 18em;
+        overflow: hidden;
+        border-radius: 16px;
+    }
+    .left
+    { 
+        float: left;
+        margin-left: 7%;   
+    }
+    .right
+    {  
+        float: right;
+        margin-right: 7%;
+    }
+    .first
+    {
+        width: 60%;
+    }
+    .second
+    {
+        width: 20%;
+    }
+    .third
+    {
+        width: 20%;
+    }
+    .content
+    {
+        border-radius: 0px 0px 16px 16px;
+        object-fit: cover;
+    }
+    .wide-content
+    {
+        width: 100%;
+    }
+    .tall-content
+    {
+        height: 100%;
+    }  
+}
+@media only screen and (min-width: 1200px) 
+{
+    p
+    {
+        font-size: 22px;
+    }
+    h1
+    {
+        font-size: 38px;
+    }
+    .contbox
+    {
+        text-align: center;   
+        margin: 0 0 5% 0;
+        padding: 0;
+        height: 19em;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .left
+    { 
+        float: left;
+        margin-left: 7%;
+
+    }
+    .right
+    {  
+        float: right;
+        margin-right: 7%;
+
+    }
+    .first
+    {
+        width: 60%;
+    }
+    .second
+    {
+        width: 20%;
+    }
+    .third
+    {
+     width: 20%;
+    }
+    .content
+    {
+        border-radius: 0px 0px 20px 20px;
+        object-fit: cover;
+    }
+    .wide-content
+    {
+        width: 100%;
+    }
+    .tall-content
+    {
+        height: 100%;
+    }
+}
