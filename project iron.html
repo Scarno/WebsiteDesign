@@ -1,32 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>CSS Website Layout</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>CSS Website Layout</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
 
+    </head> 
+    <body>
+        <div class="header dark-purple nebulous-font">
+          <img src="https://images10.newegg.com/mps/sellerstore/seller_a65e_90b13ef1-2134-46d1-8896-a4f9f73357fe.jpg" class="banner">
+          <h1>project iron</h1>
+        </div>
+        
+        <div class = "column">
+            
+            <div class= "post">
+            <div class= "title">Update #4: Fundamentals of Verticality </div>
+            <div class= "date">3 February 2019</div>
+            <img src="PIGif5.gif" class= "visual" width = "50%">
+			
+                <br>Welp, I lied about working on hitboxes.  Instead I did some house cleaning with some of the internals of the code and implemented the foundation for vertical gameplay, namely gravity and jumping. Some of the 'cleaning' was converting segments of code originally written for the Zealot into scripts so that they can be repurposed for other characters and objects.  I also added some variable feedback into the game itself (in the top left corner) so I wasn't skimming through a debug window that was flooded every time I ran the game.  This will streamline the testing procedure as I implement additional features.<br>
+                The characters are no longers moving along an invisible axis and instead are resting upon platforms with gravity affecting them anytime they're airborne.  The animations leave a lot to be desired but, functionally speaking, they work so I'm inclined to switch onto something else for a while.
+                
+            </div>
+                
+            <div class= "post">
+            <div class= "title"> Update #3 </div>
+            <div class= "date"> 19 January 2019</div>
+            <img src="PIGif3.gif" class= "visual" width = "50%">
+			
+                <br>A new year and a new update.  This time I'm bringing the ability to crouch (block) as well as introducing the first NPC: a goblin.  The goblin's AI is straight forward, alternate between patrolling left and right with a pause in between.  If the player gets too close, the goblin will chase them attempting to get into range and attack them.<br>
+                
+            <img src="PIGif4.gif" class= "visual" width = "50%">
+                
+                <br>At this point,  nearly all of the visual elements have been set up for combat so my next goal is to set up hitboxes and hurtboxes so that characters can fight.
 
-</head>
-<body>
-  <div class="header dark-purple radiant-font">
-  <img src="https://images10.newegg.com/mps/sellerstore/seller_a65e_90b13ef1-2134-46d1-8896-a4f9f73357fe.jpg" class="banner">
-  <h1>Subject</h1>
-  </div>
-  <div class = "column">
-    <div class= "post">
-      <div class= "title"> Test </div>
-      <div class= "date"> 2019 May 22</div>
-      adasdhdgfjsrhdjhsdg . fgsrg ag arg esrhfyjthrehs rsheah geshg ahrea gaegrsg h aeh ergtfshjdgyjh rah aerg srhg aey rgsrggaergeragg aergaregagr aerg a eg rg rg s htggrsgsrhtreht re hethgath rh a hta htstfhjgtya jyy <br>
-      ada<br>
+            </div>
+            
+            <div class= "post">
+            <div class= "title"> Update #2 </div>
+            <div class= "date"> 15 December 2018</div>
+            <img src="PIGif2.gif" class= "visual" width = "50%">
+			
+                <br>This update came far later than I had hoped. A cold, my work ramping up, and bunch of new game releases ganged up on my free time so Project Iron worked slowed down a bit.  That said, here we are! Since last time, I've added a proper sprint (distinct from the default run) as well as an attack animation.  Behind the scenes, I've been tinkering with standardizing the dash duration; currently, it varies based on what action the player was taking immediately before the dash.	
+
+            </div>
+            
+            <div class= "post">
+            <div class= "title"> Update #1 </div>
+            <div class= "date"> 25 November 2018</div>
+            <img src="PIGif1.gif" class= "visual" width = "50%">
+			
+                <br>The first official update for Project Iron!  This gif demonstrates most of what I've produced thus far. Namely, a run, idle, dash, and turn animation, a 3 layer background that wherein each layer scrolls at a different pace to create a parallax effect, and the ability move left and right along the screen as well as a camera to compliment this capability.  On top of displaying progress on the game, I will occasionally show old files/bugs if I have an unprogressive week or just feel like it.  Stayed tuned for more.
+
+            </div>
+            
+            <div class= "post">
+              <div class= "title"> Introductions </div>
+              <div class= "date"> 2018 October 17</div>
+                This site exists for the purpose of logging progress on a game that is going by the name as well as a place to practice html.  There is also a tab for general blogging where I'll toss my incredibly qualified opinion on things such as games, movies, and anime.  Lastly, there's a tab where I talk a bit about myself.  Look forward to updates.
     
-    </div>
-    <div class= "post">
-      <div class= "title"> Test </div>
-      <div class= "date"> 2019 May 22</div>
-      adasdhdgfjsrhdjhsdg . fgsrg ag arg esrhfyjthrehs rsheah geshg ahrea gaegrsg h aeh ergtfshjdgyjh rah aerg srhg aey rgsrggaergeragg aergaregagr aerg a eg rg rg s htggrsgsrhtreht re hethgath rh a hta htstfhjgtya jyy <br>
-      ada<br>
-    
-    </div>
-  </div>
-</body>
+            </div>
+        </div>
+    </body>
 </html>
