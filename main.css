@@ -2,15 +2,17 @@
 body 
 {
   margin: 0;
-  background: linear-gradient(to bottom, #060115 37%, #ff1b31 132%);
+  background: linear-gradient(to bottom, #060115 37%, #ff1b31 77%);
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
+    padding: 0px;
   /*
   060115 purple
   d40db1 pink
   ff1b31 red
-  d43a0d orange
+  #d43a0d orange
   fff220 yellow
+  0039e6 blue
   */
 }
 .banner
@@ -18,23 +20,28 @@ body
   width: 100%;
   padding: 0;
   margin: 0;
+    vertical-align: bottom;
+}
+#bottom
+{
+    padding: 0px;
+    margin:0px;
+    bottom: 0px;
 }
 .column
 {
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
-  padding: 0% 5%;
-  
-  color:#d43a0d;
-  /*
-  text-shadow: 1px 1px #fff220;
-  */
+  padding: 0% 5%; 
+  color:#ff1b31;
   font-family: 'Roboto', sans-serif;
 }
 .post
 {
-  background: linear-gradient(to bottom, #060115 40%, rgba(0, 0, 0, 0) 100%);
-  padding:2% 1% 10% 1%;
+  background-color: #060115;
+  padding:2% 5% 10% 5%;
+    margin-bottom: 1%;
+    font-size: 12px;  
 }
 .title
 {
@@ -56,6 +63,35 @@ body
     text-align: center;
     width: 100%;
 }
+.navbar {
+  overflow: hidden;
+  background-color: #ff1b31;
+    text-shadow: 1px 1px #fff220;
+   margin: 0px;
+    
+  
+}
+.navbar a {
+  float: left;
+  color: #0039e6;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  border-right: solid 4px  #060115;
+  margin: 0px;
+}
+.navbar a:hover {
+  background-color: #d40db1;
+    color: #060115;
+    text-shadow: 2px 2px #fff220;
+}
+.navbar a.active {
+  background-color: #060115;
+  color: #e60000;
+    text-shadow: 3px 1px #0039e6;
+  
+}
 p
 {
     font-size: 18px;
@@ -66,6 +102,7 @@ h1
 }
 .visual
 {
+    width:90%;
     display: block;
     margin-left:auto;
     margin-right:auto;
@@ -117,6 +154,14 @@ h1
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (min-width:600px) 
 {
+    .column
+    {
+        width: 80%;
+    }
+    .post
+    {
+        font-size: 14px;  
+    }
     p
     {
         font-size: 20px;
@@ -125,6 +170,10 @@ h1
     {
         font-size: 32px;
     }  
+    .visual
+    {
+        width:80%;
+    }
     .contbox
     {
         text-align: center;
@@ -146,6 +195,14 @@ h1
 }
 @media screen and (min-width:768px) 
 {
+    .column
+    {
+        width: 70%;
+    }
+    .post
+    {
+        font-size: 16px;  
+    }
     p
     {
         font-size: 20px;
@@ -153,6 +210,10 @@ h1
     h1
     {
         font-size: 34px;
+    }
+    .visual
+    {
+        width:70%;
     }
     .contbox
     {
@@ -201,6 +262,14 @@ h1
 }
 @media only screen and (min-width: 992px) 
 {
+    .column
+    {
+        width: 60%;
+    }
+    .post
+    {
+        font-size: 18px;  
+    }
     p
     {
         font-size: 22px;
@@ -208,6 +277,10 @@ h1
     h1
     {
         font-size: 36px;
+    }
+    .visual
+    {
+        width:60%;
     }
     .contbox
     {
@@ -256,6 +329,10 @@ h1
 }
 @media only screen and (min-width: 1200px) 
 {
+    .post
+    {
+        font-size: 20px;  
+    }
     p
     {
         font-size: 22px;
@@ -263,6 +340,10 @@ h1
     h1
     {
         font-size: 38px;
+    }
+    .visual
+    {
+        width:50%;
     }
     .contbox
     {
